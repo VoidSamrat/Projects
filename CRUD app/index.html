@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Medicine inventory</title>
+</head>
+
+<body>
+    <h1>Medicine inventory</h1>
+    <table id="table">
+      <tr>
+        <td>
+          <form autocomplete="off" onsubmit="onFormSubmit()">
+            <div>
+              <label for="productCode">Enter Batch Number</label>
+              <pre><input
+                type="tel"
+                name="productCode"
+                id="productCode"
+                placeholder="     Format: 012-6789-ATZ"
+                pattern="[0-9]{3}-[0-9]{4}-[A-Z]{3}"
+                maxlength="12"
+              /></pre>
+            </div>
+            <div>
+              <label for="product">Medicine Name</label>
+              <input
+                type="text"
+                name="product"
+                id="product" 
+                placeholder="Enter your Medicine's Name"
+              />
+            </div>
+            <div>
+              <label for="qty">Manufacture Company</label>
+              <input
+                type="text"
+                name="qty"
+                id="qty"
+                placeholder="MFD Name"
+              />
+            </div>
+            <div>
+              <label for="perPrice">Expiry Date</label>
+              <input
+                type="month"
+                name="perPrice"
+                id="perPrice"
+              />
+            </div>
+            <div class="form_action--button">
+              <input type="submit" value="Submit 📤" />
+              <input type="reset" value="Reset 🔄" />
+            </div>
+          </form>
+          <td>
+            <table class="list" id="storeList">
+                <thead>
+                    <tr>
+                        <th>Batch Number</th>
+                        <th>Medicine Name</th>
+                        <th>Manufacture Company</th>
+                        <th>Expiry Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+          </td>
+        </td>
+      </tr>
+    </table>
+</body>
+<script src="/script.js"></script>
+
+</html>

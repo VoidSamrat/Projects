@@ -1,0 +1,121 @@
+body{
+    background-image:url(/picture/wall.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+   color:rgb(0, 0, 0);
+}
+#table{
+    width: 100%;
+    margin: 40px auto;
+    background: black;
+    color: wheat;
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid crimson;
+    text-align: left;
+    padding: 8px 15px;
+}
+#productCode{
+    width: 100%;
+    height: 30px;
+    border-color: aquamarine;
+    border-radius: 5px;
+    
+}
+#product{
+    width: 91%;
+    height: 10px;
+    border-color: aquamarine;
+    border-radius: 5px;
+}
+#qty{
+    width: 91%;
+    height: 10px;
+    border-color: aquamarine;
+    border-radius: 5px;
+}
+#perPrice{
+    width: 100%;
+    height: 35px;
+    border-color: aquamarine;
+    border-radius: 5px;
+}
+
+
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: black;
+    color: whitesmoke;
+}
+input[type="text"],input[type="number"]{
+    width:91%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+input[type="submit"]{
+    background: purple;
+    color: antiquewhite;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+input[type="reset"]{
+    background-color:darkblue;
+    color: cornsilk;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: greenyellow;
+    color: black;
+}
+
+input[type="reset"]:hover{
+    background: red;
+    color: white ;
+}
+
+button{
+    background: black;
+    color: white;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid blueviolet;
+}
+
+button:hover{
+    background: whitesmoke ;
+    color: black;
+}
